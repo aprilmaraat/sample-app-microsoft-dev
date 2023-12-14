@@ -52,8 +52,6 @@ TESTS*.xml
 .vs/
 obj/
 bin/
-aspnet-core/src/ProMax.AccountServer.Web.Host/App_Data/Logs/
-aspnet-core/src/ProMax.AccountServer.Web.Mvc/App_Data/Logs/
-aspnet-core/src/ProMax.AccountServer.Migrator/Logs/Logs.txt
-src/ProMax.AccountServer.Web.Host/App_Data/Logs/
 */obj/
+*.cache
+web-api/obj/Debug/*
