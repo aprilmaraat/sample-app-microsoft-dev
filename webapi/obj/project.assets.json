@@ -475,11 +475,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\sample-app-microsoft-dev\\webapi\\webapi.csproj",
+      "projectUniqueName": "D:\\Dibi Studios\\sample-app-microsoft-dev\\webapi\\webapi.csproj",
       "projectName": "webapi",
-      "projectPath": "D:\\Projects\\sample-app-microsoft-dev\\webapi\\webapi.csproj",
+      "projectPath": "D:\\Dibi Studios\\sample-app-microsoft-dev\\webapi\\webapi.csproj",
       "packagesPath": "C:\\Users\\april\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\sample-app-microsoft-dev\\webapi\\obj\\",
+      "outputPath": "D:\\Dibi Studios\\sample-app-microsoft-dev\\webapi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -495,7 +495,6 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -542,7 +541,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,23 @@
+<nz-divider nzPlain [nzText]="devName" nzOrientation="left"></nz-divider>
+
+<form nz-form
+  class="money-description-form">
+  <nz-form-item>
+    <label nz-checkbox>Make sure to install NodeJS 20.10.0.</label>
+  </nz-form-item>
+  <nz-form-item>
+    <label nz-checkbox>The NodeJS version includes the NPM 10.2.3.</label>
+  </nz-form-item>
+    
+  <nz-form-item>
+    <label nz-checkbox>Install Angular CLI by running the command `npm install -g @angular/cli`</label>
+  </nz-form-item>
+  <nz-form-item>
+    <label nz-checkbox>After the command, proceed on running the project as normal.</label>
+  </nz-form-item>
+  <nz-form-item>
+    <app-money-description></app-money-description>
+  </nz-form-item>
+</form>
+
+<app-money-description></app-money-description>

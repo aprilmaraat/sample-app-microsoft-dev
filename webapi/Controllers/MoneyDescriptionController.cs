@@ -36,14 +36,14 @@ public class MoneyDescriptionController : ControllerBase
         int dollars = (int)amount;
         int cents = (int)((amount - dollars) * 100);
 
-        string dollarsWords = NumberToWords(dollars);
-        string centsWords = NumberToWords(cents);
+        string dollarsWords = ConvertNumberToWords(dollars);
+        string centsWords = ConvertNumberToWords(cents);
 
         string description = $"{dollarsWords} dollars and {centsWords} cents";
         return description;
     }
 
-    private string NumberToWords(int number)
+    private string ConvertNumberToWords(int number)
     {
         if (number == 0)
         {
