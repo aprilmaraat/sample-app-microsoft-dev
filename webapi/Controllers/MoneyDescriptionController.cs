@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using webapi.Models;
 
 namespace webapi.Controllers;
 
@@ -18,7 +19,7 @@ public class MoneyDescriptionController : ControllerBase
     };
 
     [HttpGet]
-    public ActionResult<string> GetMoneyDescription(decimal amount)
+    public ActionResult<MoneyDescriptionResponse> GetMoneyDescription(decimal amount)
     {
         if (amount < 0 || amount > 999999999.99m)
         {
@@ -28,7 +29,11 @@ public class MoneyDescriptionController : ControllerBase
         var result = ConvertToMoneyWords(amount);
 
         string moneyDescription = char.ToUpper(result[0]) + result.Substring(1);
-        return Ok(moneyDescription);
+        var response = new MoneyDescriptionResponse()
+        {
+            MoneyDescription = moneyDescription
+        };
+        return Ok(response);
     }
 
     private string ConvertToMoneyWords(decimal amount)

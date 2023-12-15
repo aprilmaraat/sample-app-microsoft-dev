@@ -1,19 +1,24 @@
 <form nz-form
-  class="money-description-form">
+  [formGroup]="validateForm"
+  class="money-description-form"
+  (ngSubmit)="submit()">
   <nz-form-item>
-    <label nz-checkbox>Make sure to install NodeJS 20.10.0.</label>
+    <nz-form-control [nzErrorTip]="amountErrorTip">
+      <nz-input-group>
+        <input nz-input
+          nzSize="large"
+          type="number"
+          formControlName="amount" 
+          sosNoSpaceInput
+          [placeholder]="amountPlaceholder" />
+      </nz-input-group>
+    </nz-form-control>
   </nz-form-item>
-  <nz-form-item>
-    <label nz-checkbox>The NodeJS version includes the NPM 10.2.3.</label>
-  </nz-form-item>
-    
-  <nz-form-item>
-    <label nz-checkbox>Install Angular CLI by running the command `npm install -g @angular/cli`</label>
-  </nz-form-item>
-  <nz-form-item>
-    <label nz-checkbox>After the command, proceed on running the project as normal.</label>
-  </nz-form-item>
-  <nz-form-item>
-    <app-money-description></app-money-description>
-  </nz-form-item>
+  <h3 nz-typography>{{moneyDescription}}</h3>
+  <button nz-button
+    [nzType]="'primary'"
+    [nzSize]="'large'">
+    <span>Submit</span>
+  </button>
 </form>
+
